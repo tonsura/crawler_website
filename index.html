@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<title>My Example</title>
+
+<!-- Latest compiled and minified Bootstrap CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+<script src="https://use.fontawesome.com/f09199c07b.js"></script>
+<style>
+  @import url('https://fonts.googleapis.com/css?family=Lato');
+
+  body {
+    height: 100vh;
+  }
+
+  .container-fluid {
+    width: 100%;
+    padding: 0px;
+  }
+
+  .nav-head {
+    height: 300px;
+    background: #313541;
+  }
+
+  .sec-2 {
+
+    background: black;
+  }
+
+  .content-card {
+    font-family: 'Lato', sans-serif;
+    margin: 0 0;
+    float: none;
+    margin-bottom: 20px;
+  }
+
+  .card-title {
+    margin-top: 10px;
+    padding: 0px 10px 0px 10px;
+    font-size: 14px
+  }
+
+  .card-datail {
+    padding: 0px 10px 10px 10px;
+  }
+
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .company,
+  .price {
+    font-size: 13px;
+  }
+
+  .nav-item {
+    font-family: 'Lato', sans-serif;
+    font-style: black;
+    margin-bottom: 10px
+  }
+
+  .hvr-underline-from-center {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hvr-underline-from-center:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    background: #069E2A;
+    height: 4px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+
+  .hvr-underline-from-center:hover:before,
+  .hvr-underline-from-center:focus:before,
+  .hvr-underline-from-center:active:before {
+    left: 0;
+    right: 0;
+  }
+
+
+  #select-wrap {
+    position: relative;
+  }
+
+  #select {
+    border: 0;
+    padding: 0px 20px;
+    outline: 0;
+    color: #7b7b7b;
+    border: 1px solid #efefef;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    display: block;
+    /*width: 100%;*/
+    width: 200px;
+    height: 55px;
+  }
+
+  .select__arrow {
+    position: absolute;
+    top: 25px;
+    left: 170px;
+    width: 0;
+    height: 0;
+    pointer-events: none;
+    border-style: solid;
+    border-width: 8px 5px 0 5px;
+    border-color: #7b7b7b transparent transparent transparent;
+  }
+</style>
+
+<body>
+  <div class="container-fluid">
+    <div class="nav-head">
+      <nav class="container navbar navbar-expand-sm navbar-dark bg-faded">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-content" aria-controls="nav-content" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Brand -->
+        <!-- <a class="navbar-brand" href="#">Logo</a> -->
+
+        <!-- Links -->
+        <div class="collapse navbar-collapse" id="nav-content">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link hvr-underline-from-center" href="#" style="color:white">SEARCH</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link hvr-underline-from-center" href="#" style="color:white">CONTACT</a>
+            </li>
+          </ul>
+
+          <!-- Search -->
+          <form class="form-inline" role="search">
+            <input type="text" class="form-control" placeholder="Search" style="margin-right:15px">
+            <button type="submit" class="btn btn-success"><i class="fa fa-search" aria-hidden="true"></i></button>
+          </form>
+      </nav>
+      <div class="container content-head" style="margin-top:40px;">
+        <h3 class="text-white">SEARCH <small class="text-muted h6">7 results found</small></h3>
+      </div>
+      <div class="container" style="background:white;margin-top:20px;box-shadow: 0px 2px 6px rgba(0, 0, 0, .16);border-radius: 10px;">
+        <div class="content-filter has-success" style="padding-top :25px;margin-left:15px">
+          <div id="select-wrap">
+            <select name="" id="select">
+              <option selected>Filter By . . </option>
+              <option >Most Relevant</option>
+              <option >Most recent</option>
+            </select>
+            <span class="select__arrow"></span>
+          </div>
+        </div>
+        <div class="content" style="padding-top:20px">
+          <div class="row content-card-all align-baseline">
+            <div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-xs-6 content-card">
+              <div class="card border-0" style="box-shadow: 0px 2px 6px rgba(0, 0, 0, .16);">
+                <div class="card-block">
+                  <img src="https://images3.nike.com/is/image/DotCom/PDP_HERO_ZOOM/132170C_001_C_PREM/converse-chuck-taylor-all-star-leather-unisex-high-top-shoe.jpg" alt="..." class="img-thumbnail border-0">
+                  <h3 class="card-title">Converse JACK PURCELL CP OX</h3>
+                  <div class="row justify-content-between card-datail">
+                    <div class="text-danger company">
+                      <strong>LAZADA</strong>
+                    </div>
+                    <div class="text-info price">
+                      2099 bath
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-xs-6 content-card">
+              <div class="card border-0" style="box-shadow: 0px 2px 6px rgba(0, 0, 0, .16);">
+                <div class="card-block">
+                  <img src="https://images3.nike.com/is/image/DotCom/PDP_HERO_ZOOM/132170C_001_C_PREM/converse-chuck-taylor-all-star-leather-unisex-high-top-shoe.jpg" alt="..." class="img-thumbnail border-0">
+                  <h3 class="card-title">Converse JACK PURCELL CP OX</h3>
+                  <div class="row justify-content-between card-datail">
+                    <div class="text-danger company">
+                      <strong>LAZADA</strong>
+                    </div>
+                    <div class="text-info price">
+                      2099 bath
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-xs-6 content-card">
+              <div class="card border-0" style="box-shadow: 0px 2px 6px rgba(0, 0, 0, .16);">
+                <div class="card-block">
+                  <img src="https://images3.nike.com/is/image/DotCom/PDP_HERO_ZOOM/132170C_001_C_PREM/converse-chuck-taylor-all-star-leather-unisex-high-top-shoe.jpg" alt="..." class="img-thumbnail border-0">
+                  <h3 class="card-title">Converse JACK PURCELL CP OX</h3>
+                  <div class="row justify-content-between card-datail">
+                    <div class="text-danger company">
+                      <strong>LAZADA</strong>
+                    </div>
+                    <div class="text-info price">
+                      2099 bath
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-xs-6 content-card">
+              <div class="card border-0" style="box-shadow: 0px 2px 6px rgba(0, 0, 0, .16);">
+                <div class="card-block">
+                  <img src="https://images3.nike.com/is/image/DotCom/PDP_HERO_ZOOM/132170C_001_C_PREM/converse-chuck-taylor-all-star-leather-unisex-high-top-shoe.jpg" alt="..." class="img-thumbnail border-0">
+                  <h3 class="card-title">Converse JACK PURCELL CP OX</h3>
+                  <div class="row justify-content-between card-datail">
+                    <div class="text-danger company">
+                      <strong>LAZADA</strong>
+                    </div>
+                    <div class="text-info price">
+                      2099 bath
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-xs-6 content-card">
+              <div class="card border-0" style="box-shadow: 0px 2px 6px rgba(0, 0, 0, .16);">
+                <div class="card-block">
+                  <img src="https://images3.nike.com/is/image/DotCom/PDP_HERO_ZOOM/132170C_001_C_PREM/converse-chuck-taylor-all-star-leather-unisex-high-top-shoe.jpg" alt="..." class="img-thumbnail border-0">
+                  <h3 class="card-title">Converse JACK PURCELL CP OX</h3>
+                  <div class="row justify-content-between card-datail">
+                    <div class="text-danger company">
+                      <strong>LAZADA</strong>
+                    </div>
+                    <div class="text-info price">
+                      2099 bath
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-xs-6 content-card">
+              <div class="card border-0" style="box-shadow: 0px 2px 6px rgba(0, 0, 0, .16);">
+                <div class="card-block">
+                  <img src="https://images3.nike.com/is/image/DotCom/PDP_HERO_ZOOM/132170C_001_C_PREM/converse-chuck-taylor-all-star-leather-unisex-high-top-shoe.jpg" alt="..." class="img-thumbnail border-0">
+                  <h3 class="card-title">Converse JACK PURCELL CP OX</h3>
+                  <div class="row justify-content-between card-datail">
+                    <div class="text-danger company">
+                      <strong>LAZADA</strong>
+                    </div>
+                    <div class="text-info price">
+                      2099 bath
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-xs-6 content-card" style="">
+              <div class="card border-0" style="box-shadow: 0px 2px 6px rgba(0, 0, 0, .16);">
+                <div class="card-block">
+                  <img src="https://images3.nike.com/is/image/DotCom/PDP_HERO_ZOOM/132170C_001_C_PREM/converse-chuck-taylor-all-star-leather-unisex-high-top-shoe.jpg" alt="..." class="img-thumbnail border-0">
+                  <h3 class="card-title">Converse JACK PURCELL CP OX</h3>
+                  <div class="row justify-content-between card-datail">
+                    <div class="text-danger company">
+                      <strong>LAZADA</strong>
+                    </div>
+                    <div class="text-info price">
+                      2099 bath
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+</body>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+<!-- Popper -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+
+<!-- Latest compiled and minified Bootstrap JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
